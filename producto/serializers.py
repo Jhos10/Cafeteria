@@ -10,4 +10,4 @@ class ProductoCategoriaSerializers(serializers.ModelSerializer):
     class Meta:
         model = Producto_cateogoria
         fields = "__all__"
-        
+
