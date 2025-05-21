@@ -8,5 +8,5 @@ class Compra(models.Model):
     cantidad = models.IntegerField()
     fecha = models.DateTimeField()
     def __str__(self):
-        return self.pk
+        return f"{str(self.pk)} - {self.id_user.username} - {self.id_producto.nombre_producto}"
     
