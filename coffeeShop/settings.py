@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'usuario',
+    'usuarios',
     'compra',
     'producto',
 ]
@@ -126,6 +126,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Usuario personalizado
+AUTH_USER_MODEL = 'usuarios.User'
+# AUTH_USER_MODEL = 'usuario.Usuario'
+
 
 # Servidores que pueden hacer peticiones a la api
 CORS_ALLOWED_ORIGINS = []
